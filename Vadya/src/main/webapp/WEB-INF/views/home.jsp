@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <html>
 <head>
 
@@ -33,15 +34,16 @@ width:100%;
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="imgs/bigone.jpg" alt="Los Angeles" style="width:100%; height:100%;">
+      
+        <img src='<c:url value="/resources/imgs/bigone.jpg"></c:url>' alt="One" style="width:100%; height:100%;"/>
       </div>
 
       <div class="item">
-        <img src="imgs/bigtwo.jpg" alt="Chicago" style="width:100%; height:100%;">
+        <img src='<c:url value="/resources/imgs/bigtwo.jpg"></c:url>' alt="Two" style="width:100%; height:100%;"/>
       </div>
     
       <div class="item">
-        <img src="imgs/bigthree.jpg" alt="New york" style="width:100%; height:100%;">
+        <img src='<c:url value="/resources/imgs/bigthree.jpg"></c:url>' alt="Three" style="width:100%; height:100%;"/>
       </div>
     </div>
 
