@@ -16,8 +16,7 @@
 <nav id="navbar-red" class="navbar navbar-inverse navbar-static-top" role="navigation">
 	<div class="container">
 		<ul class="nav navbar-nav">
-		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
-				data-target="#bs-demo-navbar-collapse-1">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-demo-navbar-collapse-1">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -26,10 +25,10 @@
 	</div>
 	<div class="collapse navbar-collapse" id="bs-demo-navbar-collapse-1">
 	<ul class="nav navbar-nav">
-		<li><a href="#"><i class="fa fa-home" style="font-size:48px;color:red"></i></a></li>
-		<li><a href="#"><i class="fa fa-sign-in" style="font-size:48px;color:red"></i></a></li>
-		<li><a href="#"><i class="fa fa-user-plus" style="font-size:48px;color:red"></i></a></li>
-<!-- 	<li class="dropdown">
+		<li><a href="/index"><i class="fa fa-home" style="font-size:48px;color:red"></i></a></li>
+		<li><a href="/signin"><i class="fa fa-sign-in" style="font-size:48px;color:red"></i></a></li>
+		<li><a href="/newuser"><i class="fa fa-user-plus" style="font-size:48px;color:red"></i></a></li>
+ 	<li class="dropdown">
     	<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false">
         <i style="font-size:30px;color:white">Category</i> <b class="caret"></b>
    		</a>
@@ -41,7 +40,6 @@
 	        <li><a tabindex="-1" href="#"><i style="font-size:30px;color:black">Shoes</i></a></li>
 	    </ul>
 		</li>
- -->
 	</ul>
 		
 	</div>
