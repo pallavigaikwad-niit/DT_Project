@@ -25,23 +25,25 @@
 	</div>
 	<div class="collapse navbar-collapse" id="bs-demo-navbar-collapse-1">
 	<ul class="nav navbar-nav">
-		<li><a href="/index"><i class="fa fa-home" style="font-size:48px;color:red"></i></a></li>
-		<li><a href="/signin"><i class="fa fa-sign-in" style="font-size:48px;color:red"></i></a></li>
-		<li><a href="/newuser"><i class="fa fa-user-plus" style="font-size:48px;color:red"></i></a></li>
+		<li><a href="/Vadya/index"><i class="fa fa-home" style="font-size:48px;color:red"></i></a></li>
+		<li><a href="/Vadya/signin"><i class="fa fa-sign-in" style="font-size:48px;color:red"></i></a></li>
+		<li><a href="/Vadya/newuser"><i class="fa fa-user-plus" style="font-size:48px;color:red"></i></a></li>
+		
  	<li class="dropdown">
     	<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="false">
         <i style="font-size:30px;color:white">Category</i> <b class="caret"></b>
    		</a>
 	    <ul class="dropdown-menu">
-	        <li><a tabindex="-1" href="#"><i style="font-size:30px;color:black">Jeans</i></a></li>
+	        <li><a tabindex="-1" href="#"><i style="font-size:30px;color:black">Piano</i></a></li>
 	        <li class="divider"></li>
-	        <li><a tabindex="-1" href="#"><i style="font-size:30px;color:black">Shirts</i></a></li>
+	        <li><a tabindex="-1" href="#"><i style="font-size:30px;color:black">Guitar</i></a></li>
 	        <li class="divider"></li>
-	        <li><a tabindex="-1" href="#"><i style="font-size:30px;color:black">Shoes</i></a></li>
+	        <li><a tabindex="-1" href="#"><i style="font-size:30px;color:black">Violin</i></a></li>
 	    </ul>
 		</li>
-	</ul>
-		
+		<li><a href="/Vadya/admin"><i>Admin</i></a></li>
+
+	</ul>		
 	</div>
 </nav>
 </html>

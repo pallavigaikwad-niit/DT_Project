@@ -5,7 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login</title>
+<style type="text/css">
+		form{
+			height:400px;
+			width:100%;
+		}
+		</style>
+		
 </head>
+<jsp:include page="header.jsp"></jsp:include>
+
 <FORM METHOD="POST" ACTION="">
 	<TABLE BORDER="1">
 	  <TR>
@@ -23,4 +32,5 @@
 	  </TR>
 	</TABLE>
 </FORM>		
+	<jsp:include page="footer.jsp"></jsp:include>
 </html>
