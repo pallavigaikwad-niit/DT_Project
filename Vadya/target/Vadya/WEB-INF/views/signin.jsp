@@ -11,7 +11,6 @@
 			width:100%;
 		}
 		</style>
-		
 </head>
 <jsp:include page="header.jsp"></jsp:include>
 
