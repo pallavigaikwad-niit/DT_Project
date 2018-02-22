@@ -27,7 +27,7 @@ public class IndexController {
       return "signin";
    }
    
-/*  
+    /* 
    @RequestMapping(value = "/admin")
    public String admin() {
       return "admin";

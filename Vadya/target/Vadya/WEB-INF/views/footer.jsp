@@ -18,10 +18,10 @@
 <nav class="navbar navbar-inverse navbar-bottom" style="padding:0 0 12px 0">
 	<div class="collapse navbar-collapse" id="bs-demo-navbar-collapse-2">
 	<ul class="nav navbar-nav">
-	 	<li><a href="#"><i style="font-size:30px;color:white">Contact Us</i></a></li>	
-	 	<li><a href="#"><i style="font-size:30px;color:white">About Us</i></a></li>	
-		<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" style="font-size:48px;color:blue"></i></a></li>
-		<li><a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:48px;color:skyblue"></i></a></li>
+	 	<li><a href="#"><i style="font-size:20px;color:white">Contact Us</i></a></li>	
+	 	<li><a href="#"><i style="font-size:20px;color:white">About Us</i></a></li>	
+		<li><a href="https://www.facebook.com/"><i class="fa fa-facebook" style="font-size:38px;color:blue"></i></a></li>
+		<li><a href="https://twitter.com/"><i class="fa fa-twitter" style="font-size:38px;color:skyblue"></i></a></li>
 	</ul>
 		
 	</div>

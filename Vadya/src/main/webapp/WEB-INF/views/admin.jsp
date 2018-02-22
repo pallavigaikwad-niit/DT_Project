@@ -6,7 +6,7 @@
 <%@page isELIgnored="false"  language="java"%>
 <c:set var="contextRoot" value="${pageContext.request.contextPath}"></c:set>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -22,10 +22,13 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
+<style type="text/css">
+</style>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
- 		
+ <div class="container">
+ 
 		<c:if test="${not empty msg }">
 			<h3>${msg} </h3>
 		</c:if>

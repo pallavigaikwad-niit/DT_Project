@@ -1,2 +1,3 @@
+com\controller\AdminController.class
 com\controller\UserController.class
 com\controller\IndexController.class

@@ -22,10 +22,13 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
+<style type="text/css">
+</style>
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
- 		
+ <div class="container">
+ 
 		<c:if test="${not empty msg }">
 			<h3>${msg} </h3>
 		</c:if>
@@ -117,7 +120,7 @@
 						<select class="form-control"
 							name="supplier">
 						<c:forEach items="${suppliers}" var="sup">
-							<option value="${sup.sid}">${sup.sname}</option>
+							<option value="${sup.sid}">${sup.supplierName}</option>
 						</c:forEach>
 						</select>
 						
@@ -128,21 +131,7 @@
 						<input type="file" class="form-control-file" id="pimage" name="pimage"></input>
 					</div>
 					<button type="submit" class="btn btn-default">Submit</button>
-<!-- 
 
-							itemLabel="cname"
-							itemValue="cid"	
-							items="${categories}"
-							itemLabel="supplierName"
-							itemValue="sid"
- 							items="${suppliers}"
-
-				<hidden path="pid"/>
-				<hidden path="productName"/>
-				<hidden path="productDescription"/>
-				<hidden path="price"/>
-				<hidden path="stock"/>
--->
 				</form>
 
 <jsp:include page="footer.jsp"></jsp:include>
