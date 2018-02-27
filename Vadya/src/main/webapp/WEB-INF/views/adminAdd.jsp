@@ -22,14 +22,11 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
-<style type="text/css">
-</style>
+
 </head>
 <body>
 <jsp:include page="header.jsp"></jsp:include>
- <div class="container">
- 
-		<c:if test="${not empty msg }">
+ 		<c:if test="${not empty msg }">
 			<h3>${msg} </h3>
 		</c:if>
  
@@ -39,13 +36,12 @@
 			<li><a data-toggle="tab" href="#product">Product</a></li>
 		</ul>
 
-<!-- Supplier Tab -->
+<div class="container">
+	<!-- Supplier Tab -->
 		<div class="tab-content">
 			<div id="supplier" class="tab-pane fade in active">
-			<!--    -->
-				<form action="/Vadya/saveSupplier" method="post" >
-				
-						<div class="form-group">
+				<form action="${contextRoot}/adminAdd/saveSupplier" method="post" >
+					<div class="form-group">
 						<label for="sid">Supplier ID</label> 
 						<input type="text" class="form-control" id="sid" 
 						placeholder="Enter Supplier ID"	name="sid" />
@@ -61,9 +57,9 @@
 				</form>
 			</div>
 
-<!-- Category Tab -->
+	<!-- Category Tab -->
 			<div id="category" class="tab-pane fade">
-				<form action="/Vadya/saveCategory" method="POST">
+				<form action="${contextRoot}/adminAdd/saveCategory" method="POST">
 					<div class="form-group">
 						<label for="cid">Category ID</label> 
 						<input type="text" class="form-control" id="cid" 
@@ -78,12 +74,11 @@
 				</form>
 			</div>
 			
-
-			<!-- Product Tab -->
+	<!-- Product Tab -->
 			<div id="product" class="tab-pane fade">
-				<form action="/Vadya/saveProduct" method="POST" enctype="multipart/form-data" >
+				<form action="${contextRoot}/adminAdd/saveProduct" method="POST" enctype="multipart/form-data" >
 					<div class="form-group">
-						<label for="pName" ></label>Product Name</label> 
+						<label for="pName" >Product Name</label> 
 						<input type="text" class="form-control" id="pName" placeholder="Enter Product Name"
 							name="pName"></input>
 					</div>
@@ -96,13 +91,11 @@
 						<input type="text" class="form-control" id="pPrice"
 							placeholder="Enter Product Price" name="pPrice"/>
 					</div>
-
 					<div class="form-group">
 						<label for="pStock">Stock</label> 
 						<input type="text"  class="form-control" 
 						id="pStock" placeholder="Enter Stock" name="pStock"/>
 					</div>
-
 					<div class="form-group">
 						<label for="cid">Category ID</label> 
 						<select class="form-control" 
@@ -110,11 +103,9 @@
 								<c:forEach items="${categories}" var="cat">
 							<option value="${cat.cid}">${cat.cname}</option>
 							<c:out value="${cat.cname }"></c:out>
-						</c:forEach>
-				
+						</c:forEach>	
 						</select>
 					</div>
-
 					<div class="form-group">
 						<label for="sid">Supplier ID</label> 
 						<select class="form-control"
@@ -122,18 +113,17 @@
 						<c:forEach items="${suppliers}" var="sup">
 							<option value="${sup.sid}">${sup.supplierName}</option>
 						</c:forEach>
-						</select>
-						
+						</select>	
 					</div>
-
 					<div class="form-group">
 						<label for="file" >Select Product Image</label> 
 						<input type="file" class="form-control-file" id="pimage" name="pimage"></input>
 					</div>
 					<button type="submit" class="btn btn-default">Submit</button>
-
 				</form>
-
+			</div>
+		</div>
+	</div>
 <jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

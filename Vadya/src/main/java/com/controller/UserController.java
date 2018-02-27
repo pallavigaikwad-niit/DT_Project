@@ -18,7 +18,7 @@ public class UserController {
 	@Autowired
 	User user;
 
-	@RequestMapping(value="/insertUser", method=RequestMethod.POST )
+	@RequestMapping(value="/newuser", method=RequestMethod.POST )
 	public ModelAndView insertUser(@RequestParam("email") String email,@RequestParam("password") String password,@RequestParam("address") String address,@RequestParam("phone") String phone)
 	{
 		System.out.println("Inside addUser");

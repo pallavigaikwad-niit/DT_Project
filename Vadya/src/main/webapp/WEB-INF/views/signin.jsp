@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="contextRoot" value="${pageContext.request.contextPath}"></c:set>
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,19 +30,21 @@
 
 <div class="container">
 	<h2>Login</h2>
-  		<form action="/signin" method="post">
+  		<form id="login-form" action="${contextRoot}/login" method="post">
     		<div class="form-group">
       			<label for="email">Email:</label>
       			<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
     		</div>
     		<div class="form-group">
       			<label for="pwd">Password:</label>
-      			<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+      			<input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
     		</div>
     		<div class="checkbox">
+				<input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token}">		    
       			<label><input type="checkbox" name="remember"> Remember me</label>
     		</div>
     		<button type="submit" class="btn btn-default">Submit</button>
+    		
   		</form>
 	</div>
 
