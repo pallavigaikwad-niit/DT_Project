@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.Dao.CategoryDao;
+import com.Dao.ProductDao;
 import com.Model.Category;
+import com.Model.Product;
 
 //import com.DaoImpl.UserDaoImpl;
 //import com.Model.User;
@@ -18,6 +20,8 @@ import com.Model.Category;
 public class IndexController {
 	@Autowired
 	CategoryDao categoryDaoImpl;
+	@Autowired
+	ProductDao productDaoImpl;
 
    @RequestMapping(value = "/")
    public String index() {
@@ -41,17 +45,23 @@ public class IndexController {
    public String error() {
       return "error";
    }
+   
    /*
    @RequestMapping(value = "/admin")
    public String admin() {
       return "admin";
    }
    */
-	//returning all categories to Product form
 	@ModelAttribute("categories")
 	public List<Category> getCategories(){
 		
 	 	return categoryDaoImpl.getAllCategories();
+	}
+
+	@ModelAttribute("products")
+	public List<Product> getProducts()
+	{
+		return productDaoImpl.getAllProducts();
 	}
 }
 

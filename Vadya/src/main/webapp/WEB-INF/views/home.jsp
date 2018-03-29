@@ -20,8 +20,10 @@ height:400px;
 width:100%;
 }
 </style>
+<title>Vadya</title>
 </head>
 <body>
+<jsp:include page="header.jsp"></jsp:include>
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -56,5 +58,7 @@ width:100%;
     </a>
   </div>
 </div>
+<br>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

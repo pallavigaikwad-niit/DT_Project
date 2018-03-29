@@ -18,7 +18,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<title>Login</title>
+<title>Vadya</title>
 <style type="text/css">
 		form{
 			height:400px;
@@ -39,14 +39,12 @@
       			<label for="pwd">Password:</label>
       			<input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
     		</div>
-    		<div class="checkbox">
-				<input type="hidden" name="${_csrf.parameterName }" value="${_csrf.token}">		    
-      			<label><input type="checkbox" name="remember"> Remember me</label>
+    		<div class="form-group">
+    			<button type="submit" class="btn btn-default">Submit</button>
+				<button type="reset" class="btn btn-default">Clear</button>
     		</div>
-    		<button type="submit" class="btn btn-default">Submit</button>
-    		
   		</form>
 	</div>
-
+<br>
 <jsp:include page="footer.jsp"></jsp:include>
 </html>
